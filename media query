@@ -1,0 +1,145 @@
+@media(max-width:992px){
+   .navhead{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 25%;
+   }
+
+   .hero{
+       margin-inline: 1rem;
+   }
+
+   .hero-img{
+       display: none;
+
+   }
+
+
+   .desktop-sign-up{
+       display: none;
+   }
+
+   .mobile-sign-up{
+       display: initial;
+   }
+   
+   .menu{
+       background-color: #F1DBB6;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       /* padding: 1.5rem; */
+       height: 100vh;
+       width: 100vw;
+       z-index: 1000;
+       display: none;
+       position: absolute;
+       top: 0;
+       right: -88%;
+       /* align-items: start; */
+       align-content: start;
+       gap: 30px;
+   }
+
+   .close-menu{
+       display: block;
+       height: 40px;
+       position: absolute;
+       top: 1rem;
+       right: 1.5rem;
+   }
+
+   .fifth{
+       display: grid;
+       align-items: start;
+       gap: 1rem;
+       margin-top: 3rem;
+       margin-right: 0;
+       margin-left: 45px;
+   }
+
+
+   .menu-icon {
+       display: block;
+       height: 40px;
+   }
+
+   .second{
+      font-family: "Josefin Sans";
+      font-size: 15px;
+      font-weight: 300;
+      color: black;
+  }
+
+  .eight{ 
+   font-family: "Josefin Sans";
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+}
+
+.eleven{
+   font-family: "Josefin Sans";
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+}
+
+.fourteen{
+   font-family: "Josefin Sans";
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+}
+
+.seventeen{
+   font-family: "Josefin Sans";
+   font-size: 15px;
+   font-weight: 300;
+   color: black;
+}
+  
+  .thirdslcct{
+     border: none;
+     color:rgba(0, 0, 0, 1);
+     outline: none;  
+     background-color: transparent;
+  }
+   
+   .end {
+   flex-direction: column;
+}
+
+.file {
+   flex-direction: column;
+   margin-left: 40px;
+   gap: 30px;
+}
+
+.txt {
+   display: none;
+}
+  
+.tin {
+   border: none;
+}
+
+.six {
+   margin-top: 0px;
+   display: block;
+   text-align: center;
+   width: 100%;
+   margin-left: 150px;
+   justify-content: center;
+}
+
+.Search{
+   width: 20px;
+   height: 20px;
+}
+
+.twelve {
+   font-size:23px;
+}
+  
+}

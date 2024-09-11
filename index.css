@@ -103,57 +103,54 @@ select {
 }
 
 .header {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
 
 body {
     background-color: #F1DBB6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100dvh;
 }
 
 .word {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-left: 65px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    gap:20px;
+    text-align: center;
+}
+.word  img{
+  width:500px;
+  height: 500px;
 }
 
 .goat {
-font-size: 222px;
+font-size: 40px;
 font-weight: 222px;
 font-family: 'Marcellus';
-margin-top: -20px;
-margin-bottom: 0px;
-width: 60%;
 }
 
 .saint {
 font-family: 'Marcellus' ;
 font-weight: 400px;
-font-size: 72px;
-margin-bottom:4px;
-margin-top: 0%;
-width: 55%;
+font-size: 90px;
+
+}
+.statement{
+  font-size: 30px;
 }
 
-.imageicon {
-    width: 662px;
-    height: 616px;
-}
 
-.small {
-    display: flex;
-    gap: 2%;
-    margin-right: 2%;
-}
+
 
 .USA {
     font-family: "Josefin Sans";
-    font-size: 30px;
     font-weight: 300px;
-    margin-top: -15px;
-    width: 55%;
     line-height: 70px;
 }
 
@@ -168,6 +165,71 @@ width: 55%;
     color: #FFFFFF;
 }
 
+.mobile-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.mobile-nav .logo{
+  width: 100px;
+  height: 20px;
+}
+
+.mobile-nav .menu{
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-items{
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 13px;
+  width: 40%;
+  padding: 30px;
+  background-color: #f1dbb6;
+box-shadow: -8.5px 5.5px 10px -5px #595555;
+position: absolute;
+left: 203px;
+top: 20px;
+}
+ @media (min-width: 400px) {
+    .mobile-items{
+left: 163px;
+}
+ @media (min-width: 500px) {
+    .mobile-items{
+left: 263px;
+}
+  }
+
+ @media (min-width: 600px) {
+    .mobile-items{
+left: 403px;
+}
+  }
+
+   @media (min-width: 700px) {
+    .mobile-items{
+left: 340px;
+}
+  }
+  
+
+.mobile-items.open{
+  display: flex;
+}
+
+.mobile-items img{
+  width: 20px;
+  height: 20px;
+  
+}
+
+.mobile-items .close{
+margin-left: 90%;
+}
 
 
 @media (max-width: 967px) {
@@ -448,4 +510,36 @@ width: 55%;
     height: 20px;
     /* Size of the icon */
   }
+  
+  
+  @media (min-width: 960px) {
+    .word{
+      flex-direction: row;
+    }
+
+    .goat {
+font-size: 70px;
+}
+
+
+.saint {
+font-family: 'Marcellus' ;
+font-weight: 400px;
+font-size: 130px;
+
+}
+
+    .header {
+    display: flex;
+}
+.mobile-nav{
+  display: none;
+}
+
+.mobile-items.open{
+  display: none;
+}
+  }
+
+
   
